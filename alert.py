@@ -1,5 +1,8 @@
 #!venv/bin/python3
 
+# TODO: read SMS to update set point
+# TODO: logging
+
 from urllib.request import urlopen
 from decimal import Decimal as decimal
 from twilio.rest import TwilioRestClient as twilio
