@@ -42,7 +42,7 @@ if __name__ == '__main__':
     price = decimal(data.split('$')[1])
     if price < set_point and price < last_sent - dif:
         body='1 BTC = ${}'.format(price)
-        # send_sms(body)
-        print(body)
+        send_sms(body)
+        # print(body)
         config['PRICE']['last sent'] = str(price)
         write_config()
